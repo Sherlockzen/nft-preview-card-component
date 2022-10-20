@@ -24,11 +24,11 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
-.gridColumn {
+/* .gridColumn {
     display: grid;
     grid-template-columns:  auto  auto;
     
-}
+} */
 
 .item1 {
     color: hsl(178, 100%, 50%);
@@ -57,6 +57,8 @@ hr {
 
 .softBlue {
     color: hsl(215, 51%, 70%);
+    margin-right: 0.3rem;
+    margin-left: 0.8rem;
 }
 
 .ethereumIcon {
@@ -68,15 +70,25 @@ hr {
 }
 
 .avatar {
-    width: 2rem;    
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 100%;    
 }
 
 .flex {
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
+    /* display: flex;
+    align-items: baseline;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    align-items: baseline;
+    /* justify-content: center; */
 }
 
 .flex2 {
-    
+    display: flex;
+    align-items: center;
+    justify-content:last baseline;
+    margin-top: 1rem;
 }
