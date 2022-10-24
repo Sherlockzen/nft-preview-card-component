@@ -124,6 +124,8 @@ hr {
 
 .attribution {
     color: white;
+    max-width: 60%;
+    text-align: center;
 }
 .attribution a {
     color: hsl(178, 100%, 50%);;
