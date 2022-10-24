@@ -8,12 +8,33 @@ body {
     min-height: 100vh;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
-    /* background-color: hsl(217, 54%, 11%); */
+    background-color: hsl(217, 54%, 11%);
+}
+
+.hover-container {
+    position: relative;
 }
 
 .equilibrium {
     width: 100%;
     border-radius: 0.5rem;
+}
+
+.eye:hover {
+    opacity: 100%;
+    background-color: hsla(178, 100%, 50%, 0.507);
+    cursor: pointer;
+}
+
+.eye {
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 0%;
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: center;
+    opacity: 0%;
 }
 
 .card {
@@ -24,15 +45,12 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
-/* .gridColumn {
-    display: grid;
-    grid-template-columns:  auto  auto;
-    
-} */
-
 .item1 {
     color: hsl(178, 100%, 50%);
-    font-weight: 600;    
+    font-weight: 600;  
+    display: grid;
+    grid-template-columns: 13% auto;
+    align-items: center;
 }
 
 .item2 {
@@ -57,16 +75,18 @@ hr {
 
 .softBlue {
     color: hsl(215, 51%, 70%);
-    margin-right: 0.3rem;
-    margin-left: 0.8rem;
 }
 
 .ethereumIcon {
     width: 0.6rem;
+    height: 1.1rem;
 }
 
 .clock {
     width: 1rem;
+    position: absolute;
+    bottom: 10%;
+    left: 22%;
 }
 
 .avatar {
@@ -75,14 +95,14 @@ hr {
     border-radius: 100%;    
 }
 
-.flex {
+.grid {
     /* display: flex;
     align-items: baseline;
     justify-content: space-between; */
     display: grid;
     grid-template-columns: auto auto;
-    align-content: center;
-    align-items: baseline;
+    /* align-content: center;
+    align-items: baseline; */
     /* justify-content: center; */
 }
 
@@ -91,4 +111,25 @@ hr {
     align-items: center;
     justify-content:last baseline;
     margin-top: 1rem;
+}
+
+.text-hover:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.attribution {
+    color: white;
+}
+.attribution a {
+    color: hsl(178, 100%, 50%);;
+}
+
+.flex2 .softBlue {
+    margin-right: 0.3rem;
+    margin-left: 0.8rem;
 }
